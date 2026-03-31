@@ -4,6 +4,12 @@ description: |
   每日 arXiv 论文自动搜索 + 价值判断 + 总结 + GitHub 展示一体化技能。
   自动在每天早上 8 点执行，搜索热门论文，筛选有价值论文，生成创新点总结，
   并推送到 GitHub 仓库展示。
+  
+  支持自定义配置：
+  - 搜索领域 (cs.AI, cs.LG, cs.CV, cs.CL 等)
+  - GitHub 仓库信息
+  - 筛选标准
+  - 执行时间
 ---
 
 # Daily arXiv Digest - 每日论文自动摘要技能
@@ -294,7 +300,20 @@ daily-arxiv-digest/
 
 ## 🔧 配置要求
 
-### 必需配置
+### 方式 1: 使用配置文件 (推荐)
+
+**位置**: `~/.agents/skills/daily-arxiv-digest/config.json`
+
+首次使用时复制示例配置：
+
+```bash
+cp ~/.agents/skills/daily-arxiv-digest/config.example.json \
+   ~/.agents/skills/daily-arxiv-digest/config.json
+```
+
+然后编辑 `config.json` 自定义你的配置。
+
+### 方式 2: 环境变量
 
 | 配置项 | 说明 | 示例 |
 |--------|------|------|
@@ -302,13 +321,109 @@ daily-arxiv-digest/
 | `GITHUB_USERNAME` | GitHub 用户名 | `your-username` |
 | `GITHUB_REPO` | 仓库名称 | `daily-arxiv-digest` |
 
-### 可选配置
+### 配置文件详解
 
-| 配置项 | 说明 | 默认值 |
-|--------|------|--------|
-| `PAPER_COUNT` | 每日推荐论文数 | 3 |
-| `SEARCH_CATEGORIES` | 搜索的 arXiv 分类 | cs.AI,cs.LG,cs.CV,cs.CL |
-| `EXECUTION_TIME` | 执行时间 | 08:00 |
+```json
+{
+  "search": {
+    "categories": ["cs.AI", "cs.LG", "cs.CV", "cs.CL"],
+    "timeRange": "24h",
+    "maxResults": 20
+  },
+  "filter": {
+    "minPapers": 3,
+    "maxPapers": 5,
+    "institutions": ["MIT", "Stanford", "Google", "Meta"],
+    "hotKeywords": ["LLM", "Transformer", "Diffusion"],
+    "minHIndex": 20
+  },
+  "github": {
+    "token_env": "GITHUB_TOKEN",
+    "username_env": "GITHUB_USERNAME",
+    "repo_env": "GITHUB_REPO",
+    "branch": "main",
+    "digests_dir": "daily-digests",
+    "auto_push": true
+  },
+  "schedule": {
+    "enabled": true,
+    "timezone": "Asia/Shanghai",
+    "cron": "0 8 * * *"
+  }
+}
+```
+
+### 配置项说明
+
+#### 搜索配置 (search)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `categories` | arXiv 分类列表 | `["cs.AI", "cs.LG", "cs.CV", "cs.CL"]` |
+| `timeRange` | 搜索时间范围 | `"24h"` |
+| `maxResults` | 每个分类获取论文数 | `20` |
+| `sortBy` | 排序方式 | `"submittedDate"` |
+
+**常用 arXiv 分类**:
+- `cs.AI` - 人工智能
+- `cs.LG` - 机器学习
+- `cs.CV` - 计算机视觉
+- `cs.CL` - 计算语言学
+- `cs.RO` - 机器人学
+- `cs.SD` - 语音
+- `cs.NE` - 神经网络
+- `stat.ML` - 统计机器学习
+
+#### 筛选配置 (filter)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `minPapers` | 最少推荐论文数 | `3` |
+| `maxPapers` | 最多推荐论文数 | `5` |
+| `institutions` | 优先机构列表 | 见配置文件 |
+| `hotKeywords` | 热门关键词 | 见配置文件 |
+| `minHIndex` | 最小 h-index | `20` |
+
+#### GitHub 配置 (github)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `token_env` | Token 环境变量名 | `"GITHUB_TOKEN"` |
+| `username_env` | 用户名环境变量名 | `"GITHUB_USERNAME"` |
+| `repo_env` | 仓库环境变量名 | `"GITHUB_REPO"` |
+| `branch` | 分支名 | `"main"` |
+| `digests_dir` | 摘要目录 | `"daily-digests"` |
+| `best_papers_dir` | 精选目录 | `"best-papers"` |
+| `auto_push` | 自动推送 | `true` |
+
+#### 输出配置 (output)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `cache_dir` | 缓存目录 | `"~/.cache/daily-arxiv-digest"` |
+| `digests_dir` | 输出目录 | `"./daily-digests"` |
+| `include_abstract` | 包含摘要 | `true` |
+| `include_code_link` | 包含代码链接 | `true` |
+| `include_pdf_link` | 包含 PDF 链接 | `true` |
+
+#### 定时配置 (schedule)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `enabled` | 启用定时任务 | `true` |
+| `timezone` | 时区 | `"Asia/Shanghai"` |
+| `cron` | Cron 表达式 | `"0 8 * * *"` |
+| `retry_count` | 失败重试次数 | `3` |
+
+#### 通知配置 (notification)
+
+| 字段 | 说明 | 默认值 |
+|------|------|--------|
+| `enabled` | 启用通知 | `true` |
+| `on_success` | 成功时通知 | `true` |
+| `on_failure` | 失败时通知 | `true` |
+| `include_paper_titles` | 包含论文标题 | `true` |
+| `include_github_link` | 包含 GitHub 链接 | `true` |
 
 ---
 
@@ -497,6 +612,111 @@ https://github.com/your-username/daily-arxiv-digest
 ---
 
 **技能版本**: 1.0.0  
+**最后更新**: 2026-03-31  
+**作者**: Liu  
+**许可**: MIT
+
+---
+
+## 📝 配置使用指南
+
+### 首次配置
+
+1. **复制配置文件**
+```bash
+cp ~/.agents/skills/daily-arxiv-digest/config.example.json \
+   ~/.agents/skills/daily-arxiv-digest/config.json
+```
+
+2. **编辑配置文件**
+```bash
+nano ~/.agents/skills/daily-arxiv-digest/config.json
+```
+
+3. **修改搜索方向**
+```json
+{
+  "search": {
+    "categories": [
+      "cs.AI",      // 人工智能
+      "cs.LG",      // 机器学习
+      "cs.CV",      // 计算机视觉
+      "cs.CL"       // 自然语言处理
+    ]
+  }
+}
+```
+
+4. **修改 GitHub 仓库**
+```json
+{
+  "github": {
+    "username_env": "GITHUB_USERNAME",
+    "repo_env": "MY_PAPER_REPO"  // 自定义仓库名
+  }
+}
+```
+
+```bash
+# 设置环境变量
+export MY_PAPER_REPO="my-daily-papers"
+```
+
+5. **修改执行时间**
+```json
+{
+  "schedule": {
+    "cron": "0 9 * * *"  // 改为每天早上 9 点
+  }
+}
+```
+
+### 常用配置组合
+
+#### 只关注 LLM 相关
+```json
+{
+  "search": {
+    "categories": ["cs.CL", "cs.AI"]
+  },
+  "filter": {
+    "hotKeywords": ["LLM", "Language Model", "Transformer", "GPT"]
+  }
+}
+```
+
+#### 只关注顶级机构
+```json
+{
+  "filter": {
+    "institutions": ["MIT", "Stanford", "Berkeley", "Google", "OpenAI"]
+  }
+}
+```
+
+#### 增加推荐数量
+```json
+{
+  "filter": {
+    "minPapers": 5,
+    "maxPapers": 10
+  }
+}
+```
+
+### 验证配置
+
+```bash
+# 检查配置文件语法
+cat ~/.agents/skills/daily-arxiv-digest/config.json | python -m json.tool
+
+# 查看当前配置
+cat ~/.agents/skills/daily-arxiv-digest/config.json
+```
+
+---
+
+**技能版本**: 1.1.0 (支持配置)  
 **最后更新**: 2026-03-31  
 **作者**: Liu  
 **许可**: MIT

@@ -1,0 +1,91 @@
+# Daily arXiv Digest - 配置文件
+
+# 复制此文件为 config.json 并修改为你的配置
+
+{
+  "_comment": "将下划线开头的字段替换为你的实际配置",
+  
+  "search": {
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.CV",
+      "cs.CL"
+    ],
+    "timeRange": "24h",
+    "maxResults": 20,
+    "sortBy": "submittedDate"
+  },
+  
+  "filter": {
+    "minPapers": 3,
+    "maxPapers": 5,
+    "institutions": [
+      "MIT",
+      "Stanford",
+      "Berkeley",
+      "CMU",
+      "Google",
+      "Meta",
+      "Microsoft",
+      "OpenAI",
+      "DeepMind",
+      "Apple",
+      "Tesla",
+      "NVIDIA",
+      "Amazon",
+      "IBM",
+      "Intel"
+    ],
+    "hotKeywords": [
+      "LLM",
+      "Transformer",
+      "Diffusion",
+      "RLHF",
+      "Multimodal",
+      "Foundation Model",
+      "Large Language Model",
+      "Generative AI",
+      "Self-Supervised",
+      "Few-Shot Learning"
+    ],
+    "minHIndex": 20
+  },
+  
+  "github": {
+    "token_env": "GITHUB_TOKEN",
+    "username_env": "GITHUB_USERNAME",
+    "repo_env": "GITHUB_REPO",
+    "branch": "main",
+    "digests_dir": "daily-digests",
+    "best_papers_dir": "best-papers",
+    "auto_push": true,
+    "commit_message_template": "docs: add daily digest for {date}"
+  },
+  
+  "output": {
+    "cache_dir": "~/.cache/daily-arxiv-digest",
+    "digests_dir": "./daily-digests",
+    "date_format": "YYYY-MM-DD",
+    "include_abstract": true,
+    "include_code_link": true,
+    "include_pdf_link": true,
+    "generate_summary": true
+  },
+  
+  "schedule": {
+    "enabled": true,
+    "timezone": "Asia/Shanghai",
+    "cron": "0 8 * * *",
+    "retry_count": 3,
+    "retry_delay_minutes": 5
+  },
+  
+  "notification": {
+    "enabled": true,
+    "on_success": true,
+    "on_failure": true,
+    "include_paper_titles": true,
+    "include_github_link": true
+  }
+}
