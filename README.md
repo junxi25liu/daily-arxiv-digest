@@ -1,6 +1,6 @@
-# Daily arXiv Digest - TTS & Generative AI
+# Daily arXiv Digest - Text-to-Audio, Text-to-Speech & Generative Model
 
-> 🤖 每日 arXiv 论文自动摘要 - Text-to-Speech & 生成式 AI
+> 🤖 每日 arXiv 论文自动摘要 - Text-to-Audio, Text-to-Speech & Generative Model
 
 [![Last Updated](https://img.shields.io/github/last-commit/junxi25liu/daily-arxiv-digest)](https://github.com/junxi25liu/daily-arxiv-digest/commits/main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -127,8 +127,13 @@
 - **cs.LG** - 机器学习
 - **eess.AS** - 音频与语音处理
 
+### 主要搜索方向
+1. **Text-to-Audio** - 文本生成音频
+2. **Text-to-Speech (TTS)** - 文本转语音
+3. **Generative Model** - 生成式模型
+
 ### 关键词
-Text-to-Speech, TTS, Speech Synthesis, Voice Generation, Audio Generation, Diffusion Model, Generative AI, Transformer
+text-to-audio, text to audio, text-to-speech, text to speech, TTS, speech synthesis, audio generation, generative model, generative models, diffusion model, transformer
 
 ### 筛选标准
 - 🏛️ 知名机构 (MIT, Stanford, Google, Meta, 等)
