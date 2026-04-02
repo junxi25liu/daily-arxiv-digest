@@ -7,9 +7,141 @@
 
 ---
 
-## 📅 最新推荐 (2026-03-31)
+## 📅 最新论文推荐
 
-### 1️⃣ LLaDA-TTS: Unifying Speech Synthesis and Zero-Shot Editing via Masked Diffusion Modeling
+### 2026-04-02 (3 篇)
+
+#### 1️⃣ MambaVoiceCloning: Efficient and Expressive Text-to-Speech via State-Space Modeling and Diffusion Control
+
+**arXiv**: [2604.00292](https://arxiv.org/abs/2604.00292)  
+**作者**: Sahil Kumar 等  
+**机构**: ICLR 2026 接收  
+**分类**: cs.SD, cs.LG
+
+> **一句话总结**: 首次实现扩散 TTS 的条件路径在推理时完全使用状态空间模型（SSM），移除所有注意力和显式 RNN 层，实现线性时间复杂度和 1.6 倍吞吐提升。
+
+**核心创新**:
+- ✅ 纯 SSM 条件路径，移除注意力和 RNN 层
+- ✅ 线性时间复杂度 O(T)，支持流式推理
+- ✅ 编码器参数降至 21M，吞吐提升 1.6 倍
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-02.md#1-mambavoicecloning-efficient-and-expressive-text-to-speech-via-state-space-modeling-and-diffusion-control)**
+
+---
+
+#### 2️⃣ FineLAP: Taming Heterogeneous Supervision for Fine-grained Language-Audio Pretraining
+
+**arXiv**: [2604.01155](https://arxiv.org/abs/2604.01155)  
+**作者**: Xiquan Li 等  
+**机构**: -  
+**分类**: cs.SD
+
+> **一句话总结**: 提出细粒度语言 - 音频预训练范式，通过双流 sigmoid 损失和聚类采样策略，联合学习片段级和帧级对齐，在音频理解任务上实现 SOTA 性能。
+
+**核心创新**:
+- ✅ 双流 Sigmoid 损失，联合学习片段级和帧级对齐
+- ✅ 解耦音频投影器，同时捕获全局语义和局部细节
+- ✅ FineLAP-100k 数据集，缓解时序标注数据稀缺
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-02.md#2-finelap-taming-heterogeneous-supervision-for-fine-grained-language-audio-pretraining)**
+
+---
+
+#### 3️⃣ Sona: Real-Time Multi-Target Sound Attenuation for Noise Sensitivity
+
+**arXiv**: [2604.00447](https://arxiv.org/abs/2604.00447)  
+**作者**: Jeremy Zhengqi Huang 等  
+**机构**: -  
+**分类**: cs.SD, cs.HC
+
+> **一句话总结**: 交互式移动系统，支持实时多目标声音衰减，帮助噪声敏感人群选择性减弱烦人声音，同时保持对周围环境的感知。
+
+**核心创新**:
+- ✅ 多目标同时衰减，克服单目标限制
+- ✅ 目标条件神经管道，用户可扩展声音类别
+- ✅ 实时设备端运行，低延迟
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-02.md#3-sona-real-time-multi-target-sound-attenuation-for-noise-sensitivity)**
+
+---
+
+### 2026-04-01 (4 篇)
+
+#### 4️⃣ LongCat-AudioDiT: High-Fidelity Diffusion Text-to-Speech in the Waveform Latent Space
+
+**arXiv**: [2603.29339](https://arxiv.org/abs/2603.29339)  
+**作者**: Detai Xin 等  
+**机构**: Meituan LongCat  
+**分类**: cs.SD, eess.AS
+
+> **一句话总结**: 提出直接在波形潜空间操作的扩散 TTS 模型，无需中间声学特征，简化 TTS 流程并实现 SOTA 的零样本声音克隆性能。
+
+**核心创新**:
+- ✅ 波形潜空间直接生成，摒弃 mel 频谱等中间表示
+- ✅ 自适应投影引导替代传统 CFG，提升生成质量
+- ✅ SOTA 零样本克隆，超越 Seed-TTS
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#1-longcat-audiokit-high-fidelity-diffusion-text-to-speech-in-the-waveform-latent-space)**
+
+---
+
+#### 5️⃣ Covertly Improving Intelligibility with Data-Driven Adaptations of Speech Timing
+
+**arXiv**: [2603.30032](https://arxiv.org/abs/2603.30032)  
+**作者**: Paige Tuttösí 等  
+**机构**: -  
+**分类**: cs.CL, cs.SD
+
+> **一句话总结**: 研究发现针对性调整语速（而非全局减速）能显著提升语音可懂度，并据此构建了数据驱动的 TTS 算法，在听者无感知的情况下改善理解。
+
+**核心创新**:
+- ✅ 剪刀式语速模式，针对性调整而非全局减速
+- ✅ 跨语言稳定性，母语者和 L2 听者均有效
+- ✅ 隐蔽性改善，听者未察觉但理解度提升
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#2-covertly-improving-intelligibility-with-data-driven-adaptations-of-speech-timing)**
+
+---
+
+#### 6️⃣ SIREN: Spatially-Informed Reconstruction of Binaural Audio with Vision
+
+**arXiv**: [2603.29820](https://arxiv.org/abs/2603.29820)  
+**作者**: Seoyeon Ko 等  
+**机构**: ICASSP 2026  
+**分类**: cs.SD
+
+> **一句话总结**: 视觉引导的单声道到双耳音频转换框架，通过显式预测左右声道，实现沉浸式空间音频重建。
+
+**核心创新**:
+- ✅ ViT 编码器 + 双头自注意力，学习共享场景图
+- ✅ 软退火空间先验，避免过度约束
+- ✅ 两阶段置信度加权融合，抑制串扰
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#3-siren-spatially-informed-reconstruction-of-binaural-audio-with-vision)**
+
+---
+
+#### 7️⃣ TRACE: Training-Free Partial Audio Deepfake Detection via Embedding Trajectory Analysis
+
+**arXiv**: [2604.01083](https://arxiv.org/abs/2604.01083)  
+**作者**: Awais Khan 等  
+**机构**: -  
+**分类**: cs.SD, cs.AI, cs.CV
+
+> **一句话总结**: 无需训练的音频深度伪造检测框架，通过分析语音基础模型嵌入轨迹的一阶动态，检测部分合成的音频片段。
+
+**核心创新**:
+- ✅ 无需训练，利用冻结的语音基础模型
+- ✅ 嵌入轨迹分析，检测拼接边界突变
+- ✅ 泛化能力强，跨语言、跨合成方法表现优异
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#4-trace-training-free-partial-audio-deepfake-detection-via-embedding-trajectory-analysis)**
+
+---
+
+### 2026-03-31 (3 篇，保留最近 10 篇)
+
+#### 8️⃣ LLaDA-TTS: Unifying Speech Synthesis and Zero-Shot Editing via Masked Diffusion Modeling
 
 **arXiv**: [2603.26364](https://arxiv.org/abs/2603.26364)  
 **作者**: Xiaoyu Fan, Huizhi Xie, Wei Zou, Yunzhang Chen  
@@ -27,7 +159,7 @@
 
 ---
 
-### 2️⃣ ParaSpeechCLAP: A Dual-Encoder Speech-Text Model for Rich Stylistic Language-Audio Pretraining
+#### 9️⃣ ParaSpeechCLAP: A Dual-Encoder Speech-Text Model for Rich Stylistic Language-Audio Pretraining
 
 **arXiv**: [2603.28737](https://arxiv.org/abs/2603.28737)  
 **作者**: Anuj Diwan, Eunsol Choi, David Harwath  
@@ -45,7 +177,7 @@
 
 ---
 
-### 3️⃣ YingMusic-Singer: Controllable Singing Voice Synthesis with Multi-Level Conditioning
+#### 🔟 YingMusic-Singer: Controllable Singing Voice Synthesis with Multi-Level Conditioning
 
 **arXiv**: [2603.24589](https://arxiv.org/abs/2603.24589)  
 **作者**: -  
@@ -63,48 +195,14 @@
 
 ---
 
-### 4️⃣ DiT-Flow: Flow Matching for Speech Enhancement with Diffusion Transformers
-
-**arXiv**: [2603.21608](https://arxiv.org/abs/2603.21608)  
-**作者**: -  
-**机构**: Johns Hopkins University  
-**分类**: eess.AS, cs.LG
-
-> **一句话总结**: 基于流匹配的语音增强方法，结合 Diffusion Transformer 架构。
-
-**核心创新**:
-- ✅ 流匹配替代传统扩散
-- ✅ Transformer 架构用于语音增强
-- ✅ 高效推理
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-03-31.md#4-dit-flow-flow-matching-for-speech-enhancement-with-diffusion-transformers)**
-
----
-
-### 5️⃣ ID-LoRA: Identity-Preserving Audio-Video Generation with Low-Rank Adaptation
-
-**arXiv**: [2603.10256](https://arxiv.org/abs/2603.10256)  
-**作者**: -  
-**机构**: Tel Aviv University  
-**分类**: cs.CV, cs.AI
-
-> **一句话总结**: 音视频联合个性化生成方法，使用 LoRA 保持身份一致性。
-
-**核心创新**:
-- ✅ 音视频联合生成
-- ✅ LoRA 参数高效微调
-- ✅ 身份保持
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-03-31.md#5-id-lora-identity-preserving-audio-video-generation-with-low-rank-adaptation)**
-
----
-
 ## 📊 今日统计
 
 | 指标 | 数值 |
 |------|------|
-| 检索论文总数 | ~50 篇 |
-| 筛选推荐 | 5 篇 |
+| 检索论文总数 (04-02) | ~25 篇 |
+| 检索论文总数 (04-01) | ~30 篇 |
+| 筛选推荐 (04-02) | 3 篇 |
+| 筛选推荐 (04-01) | 4 篇 |
 | 搜索分类 | cs.CL, cs.SD, cs.AI, cs.LG, eess.AS |
 | 搜索方向 | TTS, Speech Synthesis, Audio Generation, Generative Models |
 
@@ -114,7 +212,9 @@
 
 | 日期 | 论文数 | 主要方向 | 链接 |
 |------|--------|----------|------|
-| 2026-03-31 | 5 | TTS, Speech Synthesis, Generative Models | [查看](daily-digests/arxiv-digest-2026-03-31.md) |
+| 2026-04-02 | 3 | SSM TTS, Fine-grained Pretraining, Sound Attenuation | [查看](daily-digests/arxiv-digest-2026-04-02.md) |
+| 2026-04-01 | 4 | Waveform Latent TTS, Intelligibility, Binaural Audio, Deepfake Detection | [查看](daily-digests/arxiv-digest-2026-04-01.md) |
+| 2026-03-31 | 5 | Masked Diffusion TTS, Stylistic Pretraining, Singing Voice | [查看](daily-digests/arxiv-digest-2026-03-31.md) |
 
 ---
 
@@ -222,8 +322,8 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 ---
 
-**Last Updated**: 2026-03-31  
-**Total Papers Recommended**: 5
+**Last Updated**: 2026-04-02  
+**Total Papers Recommended**: 10 (最近 10 篇概览)
 
 ---
 
