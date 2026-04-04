@@ -9,9 +9,87 @@
 
 ## 📅 最新论文推荐
 
-### 2026-04-03 (5 篇)
+### 2026-04-04 (4 篇)
 
-#### 1️⃣ Woosh: A Sound Effects Foundation Model
+#### 1️⃣ GAP-URGENet: A Generative-Predictive Fusion Framework for Universal Speech Enhancement
+
+**arXiv**: [2604.01832](https://arxiv.org/abs/2604.01832)  
+**作者**: Xiaobin Rong, Yushi Wang, Zheng Wang, Jing Lu  
+**机构**: -  
+**分类**: eess.AS, cs.SD
+
+> **一句话总结**: 提出生成 - 预测融合框架 GAP-URGENet，结合自监督表示域的全栈语音修复和频谱图域增强，在 ICASSP 2026 URGENT Challenge 中取得目标评估第 1 名。
+
+**核心创新**:
+- ✅ 生成 - 预测双分支架构，互补增强
+- ✅ 神经声码器重建，保持高质量语音
+- ✅ 后处理融合模块，带宽扩展至 48kHz
+- ✅ ICASSP 2026 URGENT Challenge 目标评估第 1 名
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#1-gap-urgenet-a-generative-predictive-fusion-framework-for-universal-speech-enhancement)**
+
+---
+
+#### 2️⃣ BidirLM: From Text to Omnimodal Bidirectional Encoders by Adapting and Composing Causal LLMs
+
+**arXiv**: [2604.02045](https://arxiv.org/abs/2604.02045)  
+**作者**: Nicolas Boizard, Théo Deschamps-Berger, Hippolyte Gisserot-Boukhlef, Céline Hudelot, Pierre Colombo  
+**机构**: -  
+**分类**: cs.CL, cs.AI
+
+> **一句话总结**: 提出将因果生成式 LLM 转换为双向编码器的系统化方法，通过权重合并和轻量数据混合避免灾难性遗忘，生成在文本、视觉和音频基准上超越替代方案的 BidirLM 编码器家族。
+
+**核心创新**:
+- ✅ 先验掩码阶段，关键适配因素
+- ✅ 线性权重合并，无需原始预训练数据
+- ✅ 轻量多域数据混合，缓解灾难性遗忘
+- ✅ 专业化模型组合，转移模态特定能力
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#2-bidirlm-from-text-to-omnimodal-bidirectional-encoders-by-adapting-and-composing-causal-llms)**
+
+---
+
+#### 3️⃣ Prosodic ABX: A Language-Agnostic Method for Measuring Prosodic Contrast in Speech Representations
+
+**arXiv**: [2604.02102](https://arxiv.org/abs/2604.02102)  
+**作者**: Haitong Sun, Stephen McIntosh, Kwanghee Choi, Eunjung Yeo, Daisuke Saito, Nobuaki Minematsu  
+**机构**: University of Tokyo  
+**分类**: cs.CL, cs.LG, cs.SD, eess.AS
+
+> **一句话总结**: 提出 prosodic ABX 判别任务，扩展经典 ABX 框架以评估自监督语音模型对韵律对比的敏感性，仅需少量示例且无需显式标注，发布英语和日语最小对数据集。
+
+**核心创新**:
+- ✅ 韵律 ABX 任务，首次扩展到韵律对比
+- ✅ 语言无关方法，无需显式韵律标注
+- ✅ 多语言数据集，英语、日语、中文评估
+- ✅ 跨条件稳定性，适合低资源场景
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#3-prosodic-abx-a-language-agnostic-method-for-measuring-prosodic-contrast-in-speech-representations)**
+
+---
+
+#### 4️⃣ PhiNet: Speaker Verification with Phonetic Interpretability
+
+**arXiv**: [2604.01590](https://arxiv.org/abs/2604.01590)  
+**作者**: Yi Ma, Shuai Wang, Tianchi Liu, Haizhou Li  
+**机构**: -  
+**分类**: eess.AS, cs.SD
+
+> **一句话总结**: 提出具有音素可解释性的说话人验证网络 PhiNet，通过利用音素证据增强决策透明度，在 VoxCeleb、SITW 和 LibriSpeech 基准上取得与传统黑盒模型相当的性能，同时提供有意义的解释。
+
+**核心创新**:
+- ✅ 音素级可解释性，详细音素对比
+- ✅ 法医说话人对比启发，模仿人类专家
+- ✅ 双重可解释性，局部和全局增强
+- ✅ 性能不妥协，与传统黑盒模型相当
+
+**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#4-phinet-speaker-verification-with-phonetic-interpretability)**
+
+---
+
+### 2026-04-03 (5 篇，保留最近 10 篇)
+
+#### 5️⃣ Woosh: A Sound Effects Foundation Model
 
 **arXiv**: [2604.01929](https://arxiv.org/abs/2604.01929)  
 **作者**: Gaëtan Hadjeres, Marc Ferras, Khaled Koutini, et al.  
@@ -29,7 +107,7 @@
 
 ---
 
-#### 2️⃣ T5Gemma-TTS Technical Report
+#### 6️⃣ T5Gemma-TTS Technical Report
 
 **arXiv**: [2604.01760](https://arxiv.org/abs/2604.01760)  
 **作者**: Chihiro Arata, Kiyoshi Kurihara  
@@ -47,7 +125,7 @@
 
 ---
 
-#### 3️⃣ OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models
+#### 7️⃣ OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models
 
 **arXiv**: [2604.00688](https://arxiv.org/abs/2604.00688)  
 **作者**: Han Zhu, Lingxuan Ye, Wei Kang, et al.  
@@ -65,7 +143,7 @@
 
 ---
 
-#### 4️⃣ FastTurn: Unifying Acoustic and Streaming Semantic Cues for Low-Latency and Robust Turn Detection
+#### 8️⃣ FastTurn: Unifying Acoustic and Streaming Semantic Cues for Low-Latency and Robust Turn Detection
 
 **arXiv**: [2604.01897](https://arxiv.org/abs/2604.01897)  
 **作者**: Chengyou Wang, Hongfei Xue, Chunjiang He, et al.  
@@ -83,7 +161,7 @@
 
 ---
 
-#### 5️⃣ Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation
+#### 9️⃣ Diff-VS: Efficient Audio-Aware Diffusion U-Net for Vocals Separation
 
 **arXiv**: [2604.01120](https://arxiv.org/abs/2604.01120)  
 **作者**: Yun-Ning Hung, Richard Vogl, Filip Korzeniowski, Igor Pereira  
@@ -101,9 +179,7 @@
 
 ---
 
-### 2026-04-02 (3 篇)
-
-#### 6️⃣ MambaVoiceCloning: Efficient and Expressive Text-to-Speech via State-Space Modeling and Diffusion Control
+#### 🔟 MambaVoiceCloning: Efficient and Expressive Text-to-Speech via State-Space Modeling and Diffusion Control
 
 **arXiv**: [2604.00292](https://arxiv.org/abs/2604.00292)  
 **作者**: Sahil Kumar 等  
@@ -121,91 +197,17 @@
 
 ---
 
-#### 7️⃣ FineLAP: Taming Heterogeneous Supervision for Fine-grained Language-Audio Pretraining
-
-**arXiv**: [2604.01155](https://arxiv.org/abs/2604.01155)  
-**作者**: Xiquan Li 等  
-**机构**: -  
-**分类**: cs.SD
-
-> **一句话总结**: 提出细粒度语言 - 音频预训练范式，通过双流 sigmoid 损失和聚类采样策略，联合学习片段级和帧级对齐，在音频理解任务上实现 SOTA 性能。
-
-**核心创新**:
-- ✅ 双流 Sigmoid 损失，联合学习片段级和帧级对齐
-- ✅ 解耦音频投影器，同时捕获全局语义和局部细节
-- ✅ FineLAP-100k 数据集，缓解时序标注数据稀缺
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-02.md#2-finelap-taming-heterogeneous-supervision-for-fine-grained-language-audio-pretraining)**
-
----
-
-#### 8️⃣ Sona: Real-Time Multi-Target Sound Attenuation for Noise Sensitivity
-
-**arXiv**: [2604.00447](https://arxiv.org/abs/2604.00447)  
-**作者**: Jeremy Zhengqi Huang 等  
-**机构**: -  
-**分类**: cs.SD, cs.HC
-
-> **一句话总结**: 交互式移动系统，支持实时多目标声音衰减，帮助噪声敏感人群选择性减弱烦人声音，同时保持对周围环境的感知。
-
-**核心创新**:
-- ✅ 多目标同时衰减，克服单目标限制
-- ✅ 目标条件神经管道，用户可扩展声音类别
-- ✅ 实时设备端运行，低延迟
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-02.md#3-sona-real-time-multi-target-sound-attenuation-for-noise-sensitivity)**
-
----
-
-### 2026-04-01 (2 篇，保留最近 10 篇)
-
-#### 9️⃣ LongCat-AudioDiT: High-Fidelity Diffusion Text-to-Speech in the Waveform Latent Space
-
-**arXiv**: [2603.29339](https://arxiv.org/abs/2603.29339)  
-**作者**: Detai Xin 等  
-**机构**: Meituan LongCat  
-**分类**: cs.SD, eess.AS
-
-> **一句话总结**: 提出直接在波形潜空间操作的扩散 TTS 模型，无需中间声学特征，简化 TTS 流程并实现 SOTA 的零样本声音克隆性能。
-
-**核心创新**:
-- ✅ 波形潜空间直接生成，摒弃 mel 频谱等中间表示
-- ✅ 自适应投影引导替代传统 CFG，提升生成质量
-- ✅ SOTA 零样本克隆，超越 Seed-TTS
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#1-longcat-audiokit-high-fidelity-diffusion-text-to-speech-in-the-waveform-latent-space)**
-
----
-
-#### 🔟 OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models
-
-**arXiv**: [2604.00688](https://arxiv.org/abs/2604.00688)  
-**作者**: Han Zhu, Lingxuan Ye, Wei Kang, et al.  
-**机构**: -  
-**分类**: cs.CL, eess.AS
-
-> **一句话总结**: 支持 600+ 语言的大规模多语言零样本 TTS 模型，基于扩散语言模型离散非自回归架构，直接使用预训练 LLM 初始化。
-
-**核心创新**:
-- ✅ 600+ 语言覆盖，目前最广的多语言 TTS
-- ✅ 扩散语言模型架构，直接文本到声学 token
-- ✅ 581k 小时开源数据训练
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-01.md#5-omnivoice-towards-omnilingual-zero-shot-text-to-speech-with-diffusion-language-models)**
-
----
-
 ## 📊 今日统计
 
 | 指标 | 数值 |
 |------|------|
-| 检索论文总数 (04-03) | ~112 篇 |
-| 过去 48 小时论文 (04-03) | 23 篇 |
+| 检索论文总数 (04-04) | ~80 篇 |
+| 过去 48 小时新论文 (04-04) | 11 篇 |
+| 筛选推荐 (04-04) | 4 篇 |
 | 筛选推荐 (04-03) | 5 篇 |
-| 筛选推荐 (04-02) | 3 篇 |
-| 筛选推荐 (04-01) | 4 篇 |
+| 筛选推荐 (04-02) | 1 篇 (保留) |
 | 搜索分类 | cs.CL, cs.SD, cs.AI, cs.LG, eess.AS |
-| 搜索方向 | TTS, Speech Synthesis, Audio Generation, Generative Models |
+| 搜索方向 | TTS, Speech Synthesis, Audio Generation, Generative Models, Speech Enhancement |
 
 ---
 
@@ -213,6 +215,7 @@
 
 | 日期 | 论文数 | 主要方向 | 链接 |
 |------|--------|----------|------|
+| 2026-04-04 | 4 | Speech Enhancement, Omnimodal Encoder, Prosodic Evaluation, Speaker Verification | [查看](daily-digests/arxiv-digest-2026-04-04.md) |
 | 2026-04-03 | 5 | Sound Effects, Encoder-Decoder TTS, 600+ Language TTS, Turn Detection, Vocal Separation | [查看](daily-digests/arxiv-digest-2026-04-03.md) |
 | 2026-04-02 | 3 | SSM TTS, Fine-grained Pretraining, Sound Attenuation | [查看](daily-digests/arxiv-digest-2026-04-02.md) |
 | 2026-04-01 | 4 | Waveform Latent TTS, Intelligibility, Binaural Audio, Deepfake Detection | [查看](daily-digests/arxiv-digest-2026-04-01.md) |
@@ -239,7 +242,7 @@ text-to-audio, text to audio, text-to-speech, text to speech, TTS, speech synthe
 
 ### 筛选标准
 - 🏛️ 知名机构 (MIT, Stanford, Google, Meta, Sony AI, 等)
-- 👨🔬 高影响力作者 (h-index > 15)
+- 👨‍🔬 高影响力作者 (h-index > 15)
 - 🔥 热门方向 (LLM, Diffusion, Zero-Shot, 等)
 - 💻 代码可用 (优先)
 
@@ -324,7 +327,7 @@ MIT License - 详见 [LICENSE](LICENSE)
 
 ---
 
-**Last Updated**: 2026-04-03  
+**Last Updated**: 2026-04-04  
 **Total Papers Recommended**: 10 (最近 10 篇概览)
 
 ---
