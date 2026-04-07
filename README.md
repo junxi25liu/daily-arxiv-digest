@@ -9,9 +9,106 @@
 
 ## 📅 最新论文推荐
 
-### 2026-04-06 (5 篇)
+### 2026-04-07 (5 篇)
 
-#### 1️⃣ Woosh: A Sound Effects Foundation Model
+#### 1️⃣ AffectSpeech: A Large-Scale Emotional Speech Dataset with Fine-Grained Textual Descriptions
+
+**arXiv**: [2604.04160](https://arxiv.org/abs/2604.04160)  
+**作者**: Tianhua Qi, Wenming Zheng, Björn W. Schuller, Zhaojie Luo, Haizhou Li  
+**机构**: Academic (Haizhou Li 为知名语音学者)  
+**分类**: eess.AS, cs.SD, eess.SP
+
+> **一句话总结**: 提出 AffectSpeech 大规模情感语音数据集，采用六维度细粒度文本描述标注体系和人 -LLM 协作标注流程，支持语音情感描述生成和情感语音合成任务。
+
+**核心创新**:
+- ✅ 六维度情感标注体系 (极性、描述、强度、韵律、片段、语义)
+- ✅ 人 -LLM 协作标注流程，平衡质量与可扩展性
+- ✅ 多样化描述风格，减少下游建模风格偏差
+- ✅ 大规模高质量语料，填补情感语音数据集空白
+
+**[详细摘要 →](daily-digests/2026-04-07-daily-digest.md#1-affectspeech-a-large-scale-emotional-speech-dataset-with-fine-grained-textual-descriptions-for-speech-emotion-captioning-and-synthesis)**
+
+---
+
+#### 2️⃣ DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for 360-Degree Videos
+
+**arXiv**: [2604.02781](https://arxiv.org/abs/2604.02781)  
+**作者**: Ziyu Luo, Lin Chen, Qiang Qu, Xiaoming Chen, Yiran Shen  
+**机构**: Academic  
+**分类**: cs.SD
+
+> **一句话总结**: 提出 DynFOA 框架，结合动态场景重建与条件扩散模型，为动态和声学复杂的 360 度视频自动生成一阶 Ambisonics (FOA) 空间音频。
+
+**核心创新**:
+- ✅ 首次使用扩散模型为 360 度视频生成 FOA 空间音频
+- ✅ 3D Gaussian Splatting 场景重建，提供物理基础特征
+- ✅ 动态场景处理，支持声源位置和环境变化
+- ✅ 多条件扩散生成，视觉 + 深度 + 运动 + 几何融合
+
+**[详细摘要 →](daily-digests/2026-04-07-daily-digest.md#2-dynfoa-generating-first-order-ambisonics-with-conditional-diffusion-for-dynamic-and-acoustically-complex-360-degree-videos)**
+
+---
+
+#### 3️⃣ Speaker-Reasoner: Scaling Interaction Turns for Timestamped Speaker-Attributed ASR
+
+**arXiv**: [2604.03074](https://arxiv.org/abs/2604.03074)  
+**作者**: Zhennan Lin, Shuai Wang, Zhaokai Sun, Pengyuan Xie, Chuan Xie, Jie Liu, Qiang Zhang, Lei Xie  
+**机构**: Academic (Lei Xie 为西工大知名语音学者)  
+**分类**: eess.AS, cs.CL, cs.SD
+
+> **一句话总结**: 提出 Speaker-Reasoner，具有代理式多轮时序推理能力的端到端语音大语言模型，实现说话人归属 ASR。
+
+**核心创新**:
+- ✅ 代理式多轮时序推理，迭代分析音频结构
+- ✅ 联合建模说话人身份、性别、时间戳和转录
+- ✅ 说话人感知缓存，支持长音频处理
+- ✅ 三阶段渐进训练策略
+
+**[详细摘要 →](daily-digests/2026-04-07-daily-digest.md#3-speaker-reasoner-scaling-interaction-turns-and-reasoning-patterns-for-timestamped-speaker-attributed-asr)**
+
+---
+
+#### 4️⃣ Unmixing the Crowd: Enrollment-Free Target Speech Extraction
+
+**arXiv**: [2604.03219](https://arxiv.org/abs/2604.03219)  
+**作者**: FNU Sidharth, Meysam Asgari, Hao-Wen Dong, Dhruv Jain  
+**机构**: Industry Lab  
+**分类**: eess.AS, cs.SD
+
+> **一句话总结**: 提出无需注册的目标语音提取方法，直接从混合音频中预测每个说话人的嵌入向量，消除对干净注册音频的依赖。
+
+**核心创新**:
+- ✅ 无需注册的语音提取，从混合音频预测说话人嵌入
+- ✅ Mixture-to-Set 映射，输出候选说话人嵌入集
+- ✅ 排列不变教师监督，对齐到单人嵌入空间
+- ✅ 结构化嵌入空间，优于 WavLM+K-means
+
+**[详细摘要 →](daily-digests/2026-04-07-daily-digest.md#4-unmixing-the-crowd-learning-mixture-to-set-speaker-embeddings-for-enrollment-free-target-speech-extraction)**
+
+---
+
+#### 5️⃣ Split and Conquer Partial Deepfake Speech
+
+**arXiv**: [2604.02913](https://arxiv.org/abs/2604.02913)  
+**作者**: Inbal Rimon, Oren Gal, Haim Permuter  
+**机构**: Academic  
+**分类**: cs.SD, cs.AI, cs.LG
+
+> **一句话总结**: 提出分而治之的局部深度伪造语音检测框架，将问题分解为边界检测和片段级分类两阶段，在 PartialSpoof 基准上取得最先进性能。
+
+**核心创新**:
+- ✅ 两阶段分解：边界检测 + 片段级分类
+- ✅ 边界检测器识别时间转换点
+- ✅ 反射式多长度训练，提升鲁棒性
+- ✅ 多配置融合，互补预测
+
+**[详细摘要 →](daily-digests/2026-04-07-daily-digest.md#5-split-and-conquer-partial-deepfake-speech)**
+
+---
+
+### 2026-04-06 (5 篇，保留最近 10 篇)
+
+#### 6️⃣ Woosh: A Sound Effects Foundation Model
 
 **arXiv**: [2604.01929](https://arxiv.org/abs/2604.01929)  
 **作者**: Gaëtan Hadjeres, Marc Ferras, Khaled Koutini, et al.  
@@ -30,7 +127,7 @@
 
 ---
 
-#### 2️⃣ GAP-URGENet: A Generative-Predictive Fusion Framework for Universal Speech Enhancement
+#### 7️⃣ GAP-URGENet: A Generative-Predictive Fusion Framework for Universal Speech Enhancement
 
 **arXiv**: [2604.01832](https://arxiv.org/abs/2604.01832)  
 **作者**: Xiaobin Rong, Yushi Wang, Zheng Wang, Jing Lu  
@@ -49,7 +146,7 @@
 
 ---
 
-#### 3️⃣ FastTurn: Unifying Acoustic and Streaming Semantic Cues for Low-Latency Turn Detection
+#### 8️⃣ FastTurn: Unifying Acoustic and Streaming Semantic Cues for Low-Latency Turn Detection
 
 **arXiv**: [2604.01897](https://arxiv.org/abs/2604.01897)  
 **作者**: Chengyou Wang, Hongfei Xue, Chunjiang He, et al.  
@@ -68,7 +165,7 @@
 
 ---
 
-#### 4️⃣ DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos
+#### 9️⃣ DynFOA: Generating First-Order Ambisonics with Conditional Diffusion
 
 **arXiv**: [2604.02781](https://arxiv.org/abs/2604.02781)  
 **作者**: Ziyu Luo, Lin Chen, Qiang Qu, et al.  
@@ -87,7 +184,7 @@
 
 ---
 
-#### 5️⃣ FineLAP: Taming Heterogeneous Supervision for Fine-grained Language-Audio Pretraining
+#### 🔟 FineLAP: Taming Heterogeneous Supervision for Fine-grained Language-Audio Pretraining
 
 **arXiv**: [2604.01155](https://arxiv.org/abs/2604.01155)  
 **作者**: Xiquan Li, Xuenan Xu, Ziyang Ma, et al.  
@@ -106,102 +203,6 @@
 
 ---
 
-### 2026-04-05 (5 篇，保留最近 10 篇)
-
-#### 6️⃣ T5Gemma-TTS Technical Report
-
-**arXiv**: [2604.01760](https://arxiv.org/abs/2604.01760)  
-**作者**: Chihiro Arata, Kiyoshi Kurihara  
-**机构**: Independent Research  
-**分类**: eess.AS
-
-> **一句话总结**: 基于 T5Gemma 编码器 - 解码器架构的 TTS 模型，通过交叉注意力维持持久文本条件，引入 PM-RoPE 改进时长控制，日语说话人相似度 0.677 超越 XTTSv2。
-
-**核心创新**:
-- ✅ 编码器 - 解码器架构，解决长语音文本条件减弱问题
-- ✅ PM-RoPE 位置嵌入，注入进度信号控制时长
-- ✅ 170k 小时多语言训练，韩语零样本泛化 0.747
-- ✅ 开源代码和权重
-
-**[详细摘要 →](daily-digests/2026-04-05-daily-digest.md#1-t5gemma-tts-technical-report)**
-
----
-
-#### 7️⃣ Prosodic ABX: A Language-Agnostic Method for Measuring Prosodic Contrast in Speech Representations
-
-**arXiv**: [2604.02102](https://arxiv.org/abs/2604.02102)  
-**作者**: Haitong Sun, Stephen McIntosh, Kwanghee Choi, et al.  
-**机构**: Academic (Japanese Institutions)  
-**分类**: cs.CL, cs.LG, cs.SD, eess.AS
-
-> **一句话总结**: 提出 prosodic ABX 判别任务，扩展经典 ABX 框架以评估自监督语音模型对韵律对比的敏感性，仅需少量示例且无需显式标注。
-
-**核心创新**:
-- ✅ 韵律 ABX 任务，首次扩展到韵律对比
-- ✅ 语言无关方法，无需显式韵律标注
-- ✅ 多语言数据集，英语、日语、中文评估
-- ✅ 跨条件稳定性，适合低资源场景
-
-**[详细摘要 →](daily-digests/2026-04-05-daily-digest.md#5-prosodic-abx-a-language-agnostic-method-for-measuring-prosodic-contrast-in-speech-representations)**
-
----
-
-#### 8️⃣ BidirLM: From Text to Omnimodal Bidirectional Encoders by Adapting and Composing Causal LLMs
-
-**arXiv**: [2604.02045](https://arxiv.org/abs/2604.02045)  
-**作者**: Nicolas Boizard, Théo Deschamps-Berger, Hippolyte Gisserot-Boukhlef, Céline Hudelot, Pierre Colombo  
-**机构**: -  
-**分类**: cs.CL, cs.AI
-
-> **一句话总结**: 提出将因果生成式 LLM 转换为双向编码器的系统化方法，通过权重合并和轻量数据混合避免灾难性遗忘，生成在文本、视觉和音频基准上超越替代方案的 BidirLM 编码器家族。
-
-**核心创新**:
-- ✅ 先验掩码阶段，关键适配因素
-- ✅ 线性权重合并，无需原始预训练数据
-- ✅ 轻量多域数据混合，缓解灾难性遗忘
-- ✅ 专业化模型组合，转移模态特定能力
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#2-bidirlm-from-text-to-omnimodal-bidirectional-encoders-by-adapting-and-composing-causal-llms)**
-
----
-
-#### 9️⃣ PhiNet: Speaker Verification with Phonetic Interpretability
-
-**arXiv**: [2604.01590](https://arxiv.org/abs/2604.01590)  
-**作者**: Yi Ma, Shuai Wang, Tianchi Liu, Haizhou Li  
-**机构**: -  
-**分类**: eess.AS, cs.SD
-
-> **一句话总结**: 提出具有音素可解释性的说话人验证网络 PhiNet，通过利用音素证据增强决策透明度，在 VoxCeleb、SITW 和 LibriSpeech 基准上取得与传统黑盒模型相当的性能。
-
-**核心创新**:
-- ✅ 音素级可解释性，详细音素对比
-- ✅ 法医说话人对比启发，模仿人类专家
-- ✅ 双重可解释性，局部和全局增强
-- ✅ 性能不妥协，与传统黑盒模型相当
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-04.md#4-phinet-speaker-verification-with-phonetic-interpretability)**
-
----
-
-#### 🔟 OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech with Diffusion Language Models
-
-**arXiv**: [2604.00688](https://arxiv.org/abs/2604.00688)  
-**作者**: Han Zhu, Lingxuan Ye, Wei Kang, et al.  
-**机构**: -  
-**分类**: cs.CL, eess.AS
-
-> **一句话总结**: 支持 600+ 语言的大规模多语言零样本 TTS 模型，基于扩散语言模型离散非自回归架构，直接使用预训练 LLM 初始化实现最优可懂度。
-
-**核心创新**:
-- ✅ 600+ 语言覆盖，目前最广的多语言 TTS
-- ✅ 扩散语言模型架构，直接文本到声学 token
-- ✅ 581k 小时开源数据训练，完全开源
-
-**[详细摘要 →](daily-digests/arxiv-digest-2026-04-03.md#3-omnivoice-towards-omnilingual-zero-shot-text-to-speech-with-diffusion-language-models)**
-
----
-
 ## 📊 统计信息
 
 | 指标 | 数值 |
@@ -210,12 +211,13 @@
 | 今日新增 | 5 篇 |
 | 搜索范围 | cs.SD, cs.CL, cs.AI, cs.LG, eess.AS |
 | 时间范围 | 过去 48 小时 |
-| 最近更新 | 2026-04-06 |
+| 最近更新 | 2026-04-07 |
 
 ---
 
 ## 📁 历史摘要
 
+- [2026-04-07](daily-digests/2026-04-07-daily-digest.md) - 5 篇
 - [2026-04-06](daily-digests/2026-04-06-daily-digest.md) - 5 篇
 - [2026-04-05](daily-digests/2026-04-05-daily-digest.md) - 5 篇
 - [2026-04-04](daily-digests/arxiv-digest-2026-04-04.md) - 4 篇
