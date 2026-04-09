@@ -9,6 +9,103 @@
 
 ## 📅 最新论文推荐
 
+### 2026-04-09 (5 篇)
+
+#### 1️⃣ AudioKV: KV Cache Eviction in Efficient Large Audio Language Models
+
+**arXiv**: [2604.06694](https://arxiv.org/abs/2604.06694)  
+**作者**: Yuxuan Wang, Peize He, Xiyan Gui, Xiaoqian Liu, Junhao He, Xuyang Liu, Zichen Wen, Xuming Hu, Linfeng Zhang  
+**机构**: Academic  
+**分类**: cs.SD
+
+> **一句话总结**: 提出 AudioKV 框架，通过硬件友好的语义 - 声学对齐机制优先处理音频关键的注意力头，在大型音频语言模型（LALM）中实现高效的 KV 缓存压缩，在 40% 压缩率下仅损失 0.45% 的准确率。
+
+**核心创新**:
+- ✅ 模态专用头识别：通过分析 ASR 任务中的注意力分数，识别音频关键的注意力头
+- ✅ 动态 KV 缓存预算分配：优先为模态专用头分配 KV 缓存预算
+- ✅ 频谱分数平滑（SSS）：基于 FFT 的全局滤波策略，抑制高频噪声并恢复重要性分数的平滑全局趋势
+- ✅ 硬件友好设计：整个框架设计考虑硬件效率，便于实际部署
+
+**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-1-audiokv-kv-cache-eviction-in-efficient-large-audio-language-models)**
+
+---
+
+#### 2️⃣ A Novel Automatic Framework for Speaker Drift Detection in Synthesized Speech
+
+**arXiv**: [2604.06327](https://arxiv.org/abs/2604.06327)  
+**作者**: Jia-Hong Huang, Seulgi Kim, Yi Chieh Liu, Yixian Shen, Hongyi Zhu, Prayag Tiwari, Stevan Rudinac, Evangelos Kanoulas  
+**机构**: Academic (ICASSP 2026)  
+**分类**: cs.SD, cs.AI
+
+> **一句话总结**: 提出首个自动检测合成语音中"说话人漂移"现象的框架，通过计算重叠片段的余弦相似度并结合 LLM 推理，将说话人一致性评估形式化为二分类任务。
+
+**核心创新**:
+- ✅ 说话人漂移问题定义：首次将扩散式 TTS 模型中说话人身份在单个话语内逐渐漂移的现象作为独立研究问题
+- ✅ 余弦相似度检测：基于说话人嵌入在单位球面上的几何聚类特性，计算重叠片段的余弦相似度
+- ✅ LLM 推理管道：将嵌入表示结构化后输入 LLM 进行漂移评估，桥接几何信号分析与感知推理
+- ✅ 理论保证：为基于余弦的漂移检测提供理论保证
+
+**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-2-a-novel-automatic-framework-for-speaker-drift-detection-in-synthesized-speech)**
+
+---
+
+#### 3️⃣ Generating Synthetic Doctor-Patient Conversations for Long-form Audio Summarization
+
+**arXiv**: [2604.06138](https://arxiv.org/abs/2604.06138)  
+**作者**: Yanis Labrak, David Grünert, Séverin Baroudi, Jiyun Chun, Pawel Cyrta, Sergio Burdisso, Ahmed Hassoon, David Liu, Andrew Perrault, Ricard Marxer, Thomas Schaaf  
+**机构**: Academic (Interspeech 2026)  
+**分类**: cs.SD, cs.AI
+
+> **一句话总结**: 提出合成数据生成管道，生成 8800 个医生 - 患者对话（1300 小时音频）用于长上下文音频推理训练和评估，发现级联方法仍显著优于端到端模型。
+
+**核心创新**:
+- ✅ 三阶段合成管道：角色驱动对话生成 + 多说话人音频合成 + 基于 LLM 的 SOAP 笔记生成
+- ✅ 大规模数据集：发布 8800 个合成对话，对应 1300 小时音频和参考笔记
+- ✅ 开放权重模型：整个管道完全基于开放权重模型构建
+- ✅ 长上下文评估：为长上下文音频推理提供受控评估环境
+
+**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-3-generating-synthetic-doctor-patient-conversations-for-long-form-audio-summarization)**
+
+---
+
+#### 4️⃣ Brain-to-Speech: Prosody Feature Engineering and Transformer-Based Reconstruction
+
+**arXiv**: [2604.05751](https://arxiv.org/abs/2604.05751)  
+**作者**: Mohammed Salah Al-Radhi, Géza Németh, Andon Tchechmedjiev, Binbin Xu  
+**机构**: Academic  
+**分类**: eess.SP, cs.LG, cs.SD
+
+> **一句话总结**: 提出从颅内脑电图（iEEG）信号进行脑到语音合成的新方法，通过韵律特征工程和 Transformer 编码器架构实现高保真语音重建。
+
+**核心创新**:
+- ✅ 韵律特征提取：从复杂脑 iEEG 信号中提取关键韵律特征（语调、音高、节奏）
+- ✅ 专用 Transformer 架构：设计专门用于脑到语音任务的 Transformer 编码器
+- ✅ 韵律特征整合：将提取的韵律特征整合到模型中，显著提升语音重建的自然度和表现力
+- ✅ 多指标评估：在定量和感知指标上均优于传统基线方法
+
+**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-4-brain-to-speech-prosody-feature-engineering-and-transformer-based-reconstruction)**
+
+---
+
+#### 5️⃣ Time-Domain Voice Identity Morphing (TD-VIM): A Signal-Level Approach to Morphing Attacks
+
+**arXiv**: [2604.05683](https://arxiv.org/abs/2604.05683)  
+**作者**: Aravinda Reddy PN, Raghavendra Ramachandra, K. Sreenivasa Rao, Pabitra Mitra, Kunal Singh  
+**机构**: Academic  
+**分类**: cs.SD
+
+> **一句话总结**: 提出时域语音身份变形（TD-VIM）方法，在信号级别混合两个不同身份的语音特征，生成的变形样本在说话人验证系统上达到 99.40-99.74% 的攻击成功率。
+
+**核心创新**:
+- ✅ 信号级变形：首次提出在时域信号级别进行语音身份变形的方法
+- ✅ 双身份混合：能够混合两个不同身份的语音特征，生成可同时匹配两个身份的样本
+- ✅ 多因子评估：基于不同变形因子创建四种变形信号，进行全面评估
+- ✅ 高攻击成功率：在多个说话人验证系统上达到极高的攻击成功率
+
+**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-5-time-domain-voice-identity-morphing-td-vim-a-signal-level-approach-to-morphing-attacks-on-speaker-verification-systems)**
+
+---
+
 ### 2026-04-08 (5 篇)
 
 #### 1️⃣ Brain-to-Speech: Prosody Feature Engineering and Transformer-Based Reconstruction
@@ -207,16 +304,17 @@
 
 | 指标 | 数值 |
 |------|------|
-| 总推荐论文 | 10 篇 (保留最近) |
+| 总推荐论文 | 15 篇 (保留最近) |
 | 今日新增 | 5 篇 |
 | 搜索范围 | cs.SD, cs.CL, cs.AI, cs.LG, eess.AS |
 | 时间范围 | 过去 48 小时 |
-| 最近更新 | 2026-04-08 |
+| 最近更新 | 2026-04-09 |
 
 ---
 
 ## 📁 历史摘要
 
+- [2026-04-09](../daily-digests/2026-04-09-daily-digest.md) - 5 篇
 - [2026-04-08](../daily-digests/2026-04-08-daily-digest.md) - 5 篇
 - [2026-04-07](../daily-digests/2026-04-07-daily-digest.md) - 5 篇
 - [2026-04-06](../daily-digests/2026-04-06-daily-digest.md) - 5 篇
