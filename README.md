@@ -9,6 +9,67 @@
 
 ## 📅 最新论文推荐
 
+### 2026-04-10 (3 篇)
+
+#### 1️⃣ Anchored Cyclic Generation: A Novel Paradigm for Long-Sequence Symbolic Music Generation
+
+**arXiv**: [2604.05343](https://arxiv.org/abs/2604.05343)  
+**作者**: Haoyu Gu, et al.  
+**机构**: Academic  
+**分类**: cs.SD, cs.AI  
+**会议**: ACL 2026 Findings
+
+> **一句话总结**: 提出 Anchored Cyclic Generation (ACG) 新范式，通过锚定特征引导自回归生成过程，有效缓解长序列符号音乐生成中的误差累积问题，在长序列音乐生成任务中显著优于现有主流方法。
+
+**核心创新**:
+- ✅ ACG 范式：利用已识别音乐的锚定特征在自回归过程中引导后续生成，缓解误差累积
+- ✅ Hi-ACG 框架：分层锚定循环生成框架，采用全局到局部生成策略
+- ✅ 钢琴 Token 设计：高效音乐表示 token，与 Hi-ACG 框架高度兼容
+- ✅ 性能提升：预测特征向量与真实语义向量余弦距离平均减少 34.7%
+
+**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-1-anchored-cyclic-generation-a-novel-paradigm-for-long-sequence-symbolic-music-generation)**
+
+---
+
+#### 2️⃣ Active Noise Cancellation on Open-Ear Smart Glasses
+
+**arXiv**: [2604.05519](https://arxiv.org/abs/2604.05519)  
+**作者**: Kuang Yuan, et al.  
+**机构**: Academic  
+**分类**: eess.AS, cs.HC, cs.LG, cs.SD, eess.SP
+
+> **一句话总结**: 提出首个用于开放式智能眼镜的实时主动降噪 (ANC) 系统，仅使用眼镜框架上的麦克风和微型开放式扬声器，无需耳道内误差麦克风即可实现环境噪声抑制。
+
+**核心创新**:
+- ✅ 开放式 ANC 首创：首个专为开放式智能眼镜设计的实时 ANC 系统
+- ✅ 8 麦克风阵列：利用分布在眼镜框架周围的麦克风阵列估计耳部噪声
+- ✅ 低延迟管道：实时生成反噪声信号，在 100-1000 Hz 频段有效降噪
+- ✅ 降噪效果：无校准 9.6 dB，有校准 11.2 dB 平均降噪
+
+**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-2-active-noise-cancellation-on-open-ear-smart-glasses)**
+
+---
+
+#### 3️⃣ Generalizable Audio-Visual Navigation via Binaural Difference Attention and Action Transition Prediction
+
+**arXiv**: [2604.05007](https://arxiv.org/abs/2604.05007)  
+**作者**: Yinfeng Yu, et al.  
+**机构**: Academic  
+**分类**: cs.SD, cs.AI, eess.AS  
+**会议**: IJCNN 2026
+
+> **一句话总结**: 提出 BDATP 框架，通过双耳差异注意力模块和动作转移预测任务，提升音频 - 视觉导航在未见环境中的泛化能力，在 Replica 数据集上对未听过声音的成功率提升达 21.6 个百分点。
+
+**核心创新**:
+- ✅ 双耳差异注意力 (BDA)：显式建模双耳差异增强空间定位，减少语义依赖
+- ✅ 动作转移预测 (ATP)：辅助任务作为正则化项，减轻环境特定过拟合
+- ✅ 联合优化：同时优化感知和策略模块，实现端到端音频 - 视觉导航
+- ✅ 强泛化能力：在 Replica 数据集上对未听过声音成功率提升 21.6 个百分点
+
+**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-3-generalizable-audio-visual-navigation-via-binaural-difference-attention-and-action-transition-prediction)**
+
+---
+
 ### 2026-04-09 (5 篇)
 
 #### 1️⃣ AudioKV: KV Cache Eviction in Efficient Large Audio Language Models
@@ -304,16 +365,17 @@
 
 | 指标 | 数值 |
 |------|------|
-| 总推荐论文 | 15 篇 (保留最近) |
-| 今日新增 | 5 篇 |
+| 总推荐论文 | 13 篇 (保留最近 10 天) |
+| 今日新增 | 3 篇 |
 | 搜索范围 | cs.SD, cs.CL, cs.AI, cs.LG, eess.AS |
 | 时间范围 | 过去 48 小时 |
-| 最近更新 | 2026-04-09 |
+| 最近更新 | 2026-04-10 |
 
 ---
 
 ## 📁 历史摘要
 
+- [2026-04-10](../daily-digests/2026-04-10-daily-digest.md) - 3 篇
 - [2026-04-09](../daily-digests/2026-04-09-daily-digest.md) - 5 篇
 - [2026-04-08](../daily-digests/2026-04-08-daily-digest.md) - 5 篇
 - [2026-04-07](../daily-digests/2026-04-07-daily-digest.md) - 5 篇
@@ -323,7 +385,6 @@
 - [2026-04-03](../daily-digests/arxiv-digest-2026-04-03.md) - 5 篇
 - [2026-04-02](../daily-digests/arxiv-digest-2026-04-02.md) - 3 篇
 - [2026-04-01](../daily-digests/arxiv-digest-2026-04-01.md) - 3 篇
-- [2026-03-31](../daily-digests/arxiv-digest-2026-03-31.md) - 3 篇
 
 ---
 
