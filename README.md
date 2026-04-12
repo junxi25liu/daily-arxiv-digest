@@ -9,7 +9,7 @@
 
 ## 📅 最新论文推荐
 
-### 2026-04-11 (4 篇)
+### 2026-04-12 (5 篇)
 
 #### 1️⃣ AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation
 
@@ -26,7 +26,7 @@
 - ✅ 失败模式分析：揭示文本渲染、语音连贯性、物理推理和音乐音高控制的普遍失败
 - ✅ 美学 - 语义差距发现：暴露强音频 - 视觉美学与弱语义可靠性之间的显著差距
 
-**[详细摘要 →](../daily-digests/2026-04-11-daily-digest.md#📄-paper-1-avgen-bench-a-task-driven-benchmark-for-multi-granular-evaluation-of-text-to-audio-video-generation)**
+**[详细摘要 →](./daily-digests/2026-04-12-daily-digest.md#📄-paper-1-avgen-bench-a-task-driven-benchmark-for-multi-granular-evaluation-of-text-to-audio-video-generation)**
 
 ---
 
@@ -34,7 +34,7 @@
 
 **arXiv**: [2604.08363](https://arxiv.org/abs/2604.08363)  
 **作者**: Xiaosu Su, Zihan Sun, Peilei Jia, Jun Gao  
-**机构**: Academic  
+**机构**: University of Chinese Academy of Sciences, Hello Group Inc.  
 **分类**: cs.SD, cs.AI
 
 > **一句话总结**: 提出首个统一的字幕条件文本 - 音频自回归框架 CapTalk，将语音设计从自然语言描述扩展到对话设置，实现单次话语和对话语音设计的统一处理。
@@ -45,7 +45,7 @@
 - ✅ CoT 控制序列：引入思维链控制序列显式规划对话中的回合级动态属性
 - ✅ 分层变分条件模块：平衡稳定音色保持与上下文自适应表达
 
-**[详细摘要 →](../daily-digests/2026-04-11-daily-digest.md#📄-paper-2-captalk-unified-voice-design-for-single-utterance-and-dialogue-speech-generation)**
+**[详细摘要 →](./daily-digests/2026-04-12-daily-digest.md#📄-paper-2-captalk-unified-voice-design-for-single-utterance-and-dialogue-speech-generation)**
 
 ---
 
@@ -53,8 +53,9 @@
 
 **arXiv**: [2604.06327](https://arxiv.org/abs/2604.06327)  
 **作者**: Jia-Hong Huang, Seulgi Kim, Yi Chieh Liu, Yixian Shen, Hongyi Zhu, Prayag Tiwari, Stevan Rudinac, Evangelos Kanoulas  
-**机构**: Academic (ICASSP 2026)  
-**分类**: cs.SD, cs.AI
+**机构**: University of Amsterdam, Georgia Institute of Technology, Halmstad University  
+**分类**: cs.SD, cs.AI  
+**会议**: ICASSP 2026
 
 > **一句话总结**: 提出首个自动检测合成语音中"说话人漂移"现象的框架，通过计算重叠片段的余弦相似度并结合 LLM 推理，将说话人一致性评估形式化为二分类任务。
 
@@ -64,15 +65,15 @@
 - ✅ LLM 推理管道：将嵌入表示结构化后输入 LLM 进行漂移评估，桥接几何信号分析与感知推理
 - ✅ 理论保证：为基于余弦的漂移检测提供理论保证
 
-**[详细摘要 →](../daily-digests/2026-04-11-daily-digest.md#📄-paper-3-a-novel-automatic-framework-for-speaker-drift-detection-in-synthesized-speech)**
+**[详细摘要 →](./daily-digests/2026-04-12-daily-digest.md#📄-paper-3-a-novel-automatic-framework-for-speaker-drift-detection-in-synthesized-speech)**
 
 ---
 
 #### 4️⃣ Towards Real-Time Human-AI Musical Co-Performance: Accompaniment Generation with Latent Diffusion Models and MAX/MSP
 
 **arXiv**: [2604.07612](https://arxiv.org/abs/2604.07612)  
-**作者**: Academic (12 pages, 6 figures)  
-**机构**: Academic  
+**作者**: Tornike Karchkhadze, Shlomo Dubnov  
+**机构**: University of California San Diego  
 **分类**: cs.SD, cs.AI
 
 > **一句话总结**: 提出实时人机音乐协同表演框架，使用潜在扩散模型生成伴奏，通过一致性蒸馏实现 5.4 倍加速达到实时操作，揭示延迟、前瞻深度和生成质量之间的基本权衡。
@@ -83,13 +84,33 @@
 - ✅ 滑动窗口前瞻协议：将伴奏生成形式化为从部分上下文预测未来音频
 - ✅ 一致性蒸馏加速：应用一致性蒸馏实现 5.4 倍采样时间减少，达到实时操作
 
-**[详细摘要 →](../daily-digests/2026-04-11-daily-digest.md#📄-paper-4-towards-real-time-human-ai-musical-co-performance-accompaniment-generation-with-latent-diffusion-models-and-maxmsp)**
+**[详细摘要 →](./daily-digests/2026-04-12-daily-digest.md#📄-paper-4-towards-real-time-human-ai-musical-co-performance-accompaniment-generation-with-latent-diffusion-models-and-maxmsp)**
 
 ---
 
-### 2026-04-10 (3 篇)
+#### 5️⃣ OmniSonic: Towards Universal and Holistic Audio Generation from Video and Text
 
-#### 5️⃣ Anchored Cyclic Generation: A Novel Paradigm for Long-Sequence Symbolic Music Generation
+**arXiv**: [2604.04348](https://arxiv.org/abs/2604.04348)  
+**作者**: Weiguo Pian, Saksham Singh Kushwaha, Zhimin Chen, Shijian Deng, Kai Wang, Yunhui Guo, Yapeng Tian  
+**机构**: The University of Texas at Dallas, Clemson University, University of Toronto  
+**分类**: cs.SD, cs.CV, cs.MM  
+**会议**: CVPR 2026
+
+> **一句话总结**: 提出 OmniSonic，首个能够同时生成屏幕内环境音、屏幕外环境音和人类语音的通用音频生成框架，通过 TriAttn-DiT 架构和 MoE 门控机制实现三条件联合处理。
+
+**核心创新**:
+- ✅ 通用全息音频生成任务 (UniHAGen)：定义新任务，合成包含屏幕内和屏幕外声音的全面听觉场景
+- ✅ TriAttn-DiT 架构：三交叉注意力机制，同时处理屏幕内环境音、屏幕外环境音和语音三个条件
+- ✅ MoE 门控机制：自适应平衡三个条件的贡献，根据视频内容动态调整各条件的权重
+- ✅ UniHAGen-Bench 基准：构建包含 1000+ 样本的新基准，覆盖三种代表性的屏幕内/外语音 - 环境场景
+
+**[详细摘要 →](./daily-digests/2026-04-12-daily-digest.md#📄-paper-5-omnisonic-towards-universal-and-holistic-audio-generation-from-video-and-text)**
+
+---
+
+### 2026-04-10 (3 篇，保留最近 10 篇)
+
+#### 6️⃣ Anchored Cyclic Generation: A Novel Paradigm for Long-Sequence Symbolic Music Generation
 
 **arXiv**: [2604.05343](https://arxiv.org/abs/2604.05343)  
 **作者**: Haoyu Gu, et al.  
@@ -105,11 +126,11 @@
 - ✅ 钢琴 Token 设计：高效音乐表示 token，与 Hi-ACG 框架高度兼容
 - ✅ 性能提升：预测特征向量与真实语义向量余弦距离平均减少 34.7%
 
-**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-1-anchored-cyclic-generation-a-novel-paradigm-for-long-sequence-symbolic-music-generation)**
+**[详细摘要 →](./daily-digests/2026-04-10-daily-digest.md#📄-paper-1-anchored-cyclic-generation-a-novel-paradigm-for-long-sequence-symbolic-music-generation)**
 
 ---
 
-#### 6️⃣ Active Noise Cancellation on Open-Ear Smart Glasses
+#### 7️⃣ Active Noise Cancellation on Open-Ear Smart Glasses
 
 **arXiv**: [2604.05519](https://arxiv.org/abs/2604.05519)  
 **作者**: Kuang Yuan, et al.  
@@ -124,11 +145,11 @@
 - ✅ 低延迟管道：实时生成反噪声信号，在 100-1000 Hz 频段有效降噪
 - ✅ 降噪效果：无校准 9.6 dB，有校准 11.2 dB 平均降噪
 
-**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-2-active-noise-cancellation-on-open-ear-smart-glasses)**
+**[详细摘要 →](./daily-digests/2026-04-10-daily-digest.md#📄-paper-2-active-noise-cancellation-on-open-ear-smart-glasses)**
 
 ---
 
-#### 7️⃣ Generalizable Audio-Visual Navigation via Binaural Difference Attention and Action Transition Prediction
+#### 8️⃣ Generalizable Audio-Visual Navigation via Binaural Difference Attention and Action Transition Prediction
 
 **arXiv**: [2604.05007](https://arxiv.org/abs/2604.05007)  
 **作者**: Yinfeng Yu, et al.  
@@ -144,13 +165,13 @@
 - ✅ 联合优化：同时优化感知和策略模块，实现端到端音频 - 视觉导航
 - ✅ 强泛化能力：在 Replica 数据集上对未听过声音成功率提升 21.6 个百分点
 
-**[详细摘要 →](../daily-digests/2026-04-10-daily-digest.md#📄-paper-3-generalizable-audio-visual-navigation-via-binaural-difference-attention-and-action-transition-prediction)**
+**[详细摘要 →](./daily-digests/2026-04-10-daily-digest.md#📄-paper-3-generalizable-audio-visual-navigation-via-binaural-difference-attention-and-action-transition-prediction)**
 
 ---
 
-### 2026-04-09 (3 篇，保留最近 10 篇)
+### 2026-04-09 (2 篇，保留最近 10 篇)
 
-#### 8️⃣ AudioKV: KV Cache Eviction in Efficient Large Audio Language Models
+#### 9️⃣ AudioKV: KV Cache Eviction in Efficient Large Audio Language Models
 
 **arXiv**: [2604.06694](https://arxiv.org/abs/2604.06694)  
 **作者**: Yuxuan Wang, Peize He, Xiyan Gui, Xiaoqian Liu, Junhao He, Xuyang Liu, Zichen Wen, Xuming Hu, Linfeng Zhang  
@@ -165,11 +186,11 @@
 - ✅ 频谱分数平滑（SSS）：基于 FFT 的全局滤波策略，抑制高频噪声并恢复重要性分数的平滑全局趋势
 - ✅ 硬件友好设计：整个框架设计考虑硬件效率，便于实际部署
 
-**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-1-audiokv-kv-cache-eviction-in-efficient-large-audio-language-models)**
+**[详细摘要 →](./daily-digests/2026-04-09-daily-digest.md#📄-paper-1-audiokv-kv-cache-eviction-in-efficient-large-audio-language-models)**
 
 ---
 
-#### 9️⃣ Generating Synthetic Doctor-Patient Conversations for Long-form Audio Summarization
+#### 🔟 Generating Synthetic Doctor-Patient Conversations for Long-form Audio Summarization
 
 **arXiv**: [2604.06138](https://arxiv.org/abs/2604.06138)  
 **作者**: Yanis Labrak, David Grünert, Séverin Baroudi, Jiyun Chun, Pawel Cyrta, Sergio Burdisso, Ahmed Hassoon, David Liu, Andrew Perrault, Ricard Marxer, Thomas Schaaf  
@@ -184,26 +205,7 @@
 - ✅ 开放权重模型：整个管道完全基于开放权重模型构建
 - ✅ 长上下文评估：为长上下文音频推理提供受控评估环境
 
-**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-3-generating-synthetic-doctor-patient-conversations-for-long-form-audio-summarization)**
-
----
-
-#### 🔟 Brain-to-Speech: Prosody Feature Engineering and Transformer-Based Reconstruction
-
-**arXiv**: [2604.05751](https://arxiv.org/abs/2604.05751)  
-**作者**: Mohammed Salah Al-Radhi, Géza Németh, Andon Tchechmedjiev, Binbin Xu  
-**机构**: Academic  
-**分类**: eess.SP, cs.LG, cs.SD
-
-> **一句话总结**: 提出从颅内脑电图（iEEG）信号进行脑到语音合成的新方法，通过韵律特征工程和 Transformer 编码器架构实现高保真语音重建。
-
-**核心创新**:
-- ✅ 韵律特征提取：从复杂脑 iEEG 信号中提取关键韵律特征（语调、音高、节奏）
-- ✅ 专用 Transformer 架构：设计专门用于脑到语音任务的 Transformer 编码器
-- ✅ 韵律特征整合：将提取的韵律特征整合到模型中，显著提升语音重建的自然度和表现力
-- ✅ 多指标评估：在定量和感知指标上均优于传统基线方法
-
-**[详细摘要 →](../daily-digests/2026-04-09-daily-digest.md#📄-paper-4-brain-to-speech-prosody-feature-engineering-and-transformer-based-reconstruction)**
+**[详细摘要 →](./daily-digests/2026-04-09-daily-digest.md#📄-paper-3-generating-synthetic-doctor-patient-conversations-for-long-form-audio-summarization)**
 
 ---
 
@@ -211,37 +213,21 @@
 
 | 指标 | 数值 |
 |------|------|
-| 总推荐论文 | 10 篇 (保留最近 3 天) |
-| 今日新增 | 4 篇 |
-| 搜索范围 | cs.SD, cs.CL, cs.AI, cs.LG, eess.AS, cs.CV |
-| 时间范围 | 过去 48 小时 |
-| 最近更新 | 2026-04-11 |
-
----
-
-## 📁 历史摘要
-
-- [2026-04-11](../daily-digests/2026-04-11-daily-digest.md) - 4 篇
-- [2026-04-10](../daily-digests/2026-04-10-daily-digest.md) - 3 篇
-- [2026-04-09](../daily-digests/2026-04-09-daily-digest.md) - 5 篇
-- [2026-04-08](../daily-digests/2026-04-08-daily-digest.md) - 5 篇
-- [2026-04-07](../daily-digests/2026-04-07-daily-digest.md) - 5 篇
-- [2026-04-06](../daily-digests/2026-04-06-daily-digest.md) - 5 篇
-- [2026-04-05](../daily-digests/2026-04-05-daily-digest.md) - 5 篇
-- [2026-04-04](../daily-digests/arxiv-digest-2026-04-04.md) - 4 篇
-- [2026-04-03](../daily-digests/arxiv-digest-2026-04-03.md) - 5 篇
-- [2026-04-02](../daily-digests/arxiv-digest-2026-04-02.md) - 3 篇
+| 总推荐论文数 | 10 篇（保留最近） |
+| 今日新增 | 5 篇 |
+| 主要领域 | TTS, Audio Generation, Music AI, Benchmark, Evaluation |
+| 顶级会议论文 | 3 篇 (ICASSP 2026, CVPR 2026, ACL 2026) |
+| 知名机构 | Microsoft Research, UCSD, UT Dallas, UvA, Georgia Tech |
 
 ---
 
 ## 🔗 相关链接
 
-- [arXiv](https://arxiv.org/)
-- [arXiv 今日论文](https://arxiv.org/list/recent)
 - [GitHub 仓库](https://github.com/junxi25liu/daily-arxiv-digest)
+- [arXiv 今日论文](https://arxiv.org/list/recent)
+- [完整摘要目录](./daily-digests/)
 
 ---
 
-**自动生成**: Daily arXiv Digest Skill v1.1.0  
-**专注领域**: Text-to-Speech, Text-to-Audio, Generative Models, Speech Processing  
-**更新频率**: 每日早上 8:00 (Asia/Shanghai)
+*最后更新：2026-04-12 09:00 AM (Asia/Shanghai)*  
+*自动推送 | 每日早上 8 点更新*
